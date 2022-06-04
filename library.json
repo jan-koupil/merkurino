@@ -1,0 +1,26 @@
+{
+    "name": "Merkurino",
+    "version": "0.0.1",
+    "description": "Library for using the Merkurino board (based on an Arduno Nano)",
+    "keywords": "Merkurino",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/jan-koupil/merkurino.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Janek",
+        "email": "janek@matfyz.cz",
+        "maintainer": true
+      }
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "dependencies": {
+      "Arduino/LiquidCrystal": "~1.0.7"
+    },
+    "frameworks": "arduino",
+    "platforms": "atmelavr"
+  }
