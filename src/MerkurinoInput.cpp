@@ -94,6 +94,15 @@ void MerkurinoInput::startReading(String defaultText)
     resetInput();
 };
 
+void MerkurinoInput::clearInputArea()
+{
+    for (int i = 0; i < inputLength_; i++)
+    {
+        merkurino_.lcd.setCursor(inputStartCol_ + i, inputStartRow_);
+        merkurino_.lcd.print(' ');
+    }
+}
+
 void MerkurinoInput::resetInput()
 {
     this->cursorX_ = 0;

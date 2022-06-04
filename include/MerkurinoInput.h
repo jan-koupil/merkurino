@@ -40,6 +40,7 @@ public:
     bool isReady();
     void startReading(char defaultText[], int inputLength);
     void startReading(String defaultText);
+    void clearInputArea();
     void resetInput();
     String getInput();
     void readKeys();
