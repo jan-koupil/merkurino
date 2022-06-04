@@ -1,7 +1,7 @@
 #include "Merkurino.h"
 
 Merkurino::Merkurino(){
-    lcd->begin(16, 2);
+    lcd.begin(16, 2);
 };
 
 void Merkurino::initKbdPin(){
@@ -27,4 +27,3 @@ Merkurino::Button Merkurino::readKbd(){
 void Merkurino::buzzer(bool on){
     digitalWrite(MERKURINO_BUZZER_PIN, on ? HIGH : LOW);      
 }
-

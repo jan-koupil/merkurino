@@ -14,7 +14,7 @@ class Merkurino {
 
     enum Button {None, Up, Down, Left, Right, Enter, Escape};
 
-    LiquidCrystal *lcd = new LiquidCrystal(13, 12, 8, 7, 4, 2);
+    LiquidCrystal lcd {13, 12, 8, 7, 4, 2};
     
     Merkurino();
 
