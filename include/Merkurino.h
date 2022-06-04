@@ -2,8 +2,8 @@
 #define Merkurino_H
 
 #include <Arduino.h>
-#include <LiquidCrystal.h>
 #include <Wire.h>
+#include <LiquidCrystal.h>
 
 class Merkurino {
     
