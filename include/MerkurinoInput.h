@@ -47,7 +47,7 @@ public:
     void handleKeyPress();
     void setKeyDelay(unsigned int delay);
 
-    void useSymbols(char symbolList[], int count);
+    void useSymbolList(char symbolList[], int count);
     void useNumberChars();
     void useLowercaseChars();
     void useUppercaseChars();

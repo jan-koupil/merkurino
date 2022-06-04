@@ -183,10 +183,10 @@ void MerkurinoInput::setKeyDelay(unsigned int delay) // milliseconds
     keyTimer_.setInterval(delay);
 };
 
-void MerkurinoInput::useSymbols(char symbolList[], int count)
+void MerkurinoInput::useSymbolList(char symbolList[], int count)
 {
     for (int i = 0; i < count; i++)
-        symbolList[i] = symbolList[i];
+        symbolList_[i] = symbolList[i];
 
     symbolCnt_ = count;
 };
