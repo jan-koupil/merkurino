@@ -4,10 +4,10 @@
 Merkurino m;
 
 void setup() {
-  m.InitBuzzerPin();
-  m.Buzzer(true);
+  m.initBuzzerPin();
+  m.buzzer(true);
   delay(500);
-  m.Buzzer(false);
+  m.buzzer(false);
 }
 
 void loop() {

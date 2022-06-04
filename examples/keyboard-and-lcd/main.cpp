@@ -5,51 +5,49 @@ Merkurino m;
 Merkurino::Button btn;
 
 void setup() {
-  m.InitKbdPin();
-  m.lcd->setCursor(0,0);
-  m.lcd->print("Stiskni tlacitko");
+  m.initKbdPin();
+  m.lcd.setCursor(0,0);
+  m.lcd.print("Press button");
 }
 
 void loop() {
-  m.lcd->setCursor(8,1);
-  m.lcd->print(millis()/1000);
-  m.lcd->setCursor(0,1);
-  btn = m.ReadKbd();
+  m.lcd.setCursor(0,1);
+  btn = m.readKbd();
   switch (btn)
   {
     case Merkurino::Button::Right:
     {
-      m.lcd->print("vpravo  ");
+      m.lcd.print("Right ");
       break;
     }
     case Merkurino::Button::Left:
     {
-      m.lcd->print("vlevo   ");
+      m.lcd.print("Left  ");
       break;
     }
     case Merkurino::Button::Up:
     {
-      m.lcd->print("nahoru     ");
+      m.lcd.print("Up    ");
       break;
     }
     case Merkurino::Button::Down:
     {
-      m.lcd->print("dolu   ");
+      m.lcd.print("Down  ");
       break;
     }
     case Merkurino::Button::Enter:
     {
-      m.lcd->print("potvrd ");
+      m.lcd.print("Enter ");
       break;
     }
     case Merkurino::Button::Escape:
     {
-      m.lcd->print("zpet    ");
+      m.lcd.print("Escape");
       break;
     }
     case Merkurino::Button::None:
     {
-      m.lcd->print("nic   ");
+      m.lcd.print("      ");
       break;
     }
   }
