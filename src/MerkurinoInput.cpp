@@ -57,11 +57,11 @@ void MerkurinoInput::submit()
     keyTimer_.stop();
 };
 
-MerkurinoInput::MerkurinoInput(Merkurino m)
+MerkurinoInput::MerkurinoInput(Merkurino m, inputStartCol = 0, inputStartRow = 0)
 {
     merkurino_ = m;
-    inputStartCol_ = 0;
-    inputStartRow_ = 1;
+    inputStartCol_ = inputStartCol;
+    inputStartRow_ = inputStartRow;
     setKeyDelay(MERKURINO_DEFAULT_KEY_DELAY);
 };
 
