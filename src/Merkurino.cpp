@@ -12,16 +12,16 @@ void Merkurino::InitBuzzerPin(){
     pinMode(A3, OUTPUT);
 }
     
-Button Merkurino::ReadKbd(){
+Merkurino::Button Merkurino::ReadKbd(){
     int adc_key_in = analogRead(A0); // čtení "napětí" na vstupu A0
     
-    if (adc_key_in < 40) return Button::Escape; 
-    else if (adc_key_in < 110) return Button::Left;
-    else if (adc_key_in < 300) return Button::Down;
-    else if (adc_key_in < 450) return Button::Up;
-    else if (adc_key_in < 700) return Button::Right;
-    else if (adc_key_in < 850) return Button::Enter;
-    else return Button::None;
+    if (adc_key_in < 40) return Merkurino::Button::Escape; 
+    else if (adc_key_in < 110) return Merkurino::Button::Left;
+    else if (adc_key_in < 300) return Merkurino::Button::Down;
+    else if (adc_key_in < 450) return Merkurino::Button::Up;
+    else if (adc_key_in < 700) return Merkurino::Button::Right;
+    else if (adc_key_in < 850) return Merkurino::Button::Enter;
+    else return Merkurino::Button::None;
 };
 
 void Merkurino::Buzzer(bool on){
