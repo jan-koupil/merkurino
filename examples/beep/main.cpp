@@ -5,9 +5,9 @@ Merkurino m;
 
 void setup() {
   m.initBuzzerPin();
-  m.buzzer(true);
+  m.toggleBuzzer(true);
   delay(500);
-  m.buzzer(false);
+  m.toggleBuzzer(false);
 }
 
 void loop() {

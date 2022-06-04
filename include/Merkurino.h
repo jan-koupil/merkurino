@@ -21,7 +21,7 @@ class Merkurino {
     void initKbdPin();
     void initBuzzerPin();
     Merkurino::Button readKbd();
-    void buzzer(bool on);
+    void toggleBuzzer(bool on);
 
 };
 

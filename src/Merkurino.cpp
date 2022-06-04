@@ -10,7 +10,7 @@ void Merkurino::initKbdPin(){
 
 void Merkurino::initBuzzerPin(){
     pinMode(MERKURINO_BUZZER_PIN, OUTPUT);
-}
+};
     
 Merkurino::Button Merkurino::readKbd(){
     int adc_key_in = analogRead(MERKURINO_KBD_PIN); // čtení "napětí" na vstupu A0
@@ -24,6 +24,6 @@ Merkurino::Button Merkurino::readKbd(){
     else return Merkurino::Button::None;
 };
 
-void Merkurino::buzzer(bool on){
+void Merkurino::toggleBuzzer(bool on){
     digitalWrite(MERKURINO_BUZZER_PIN, on ? HIGH : LOW);      
-}
+};
