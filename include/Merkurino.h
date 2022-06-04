@@ -5,8 +5,8 @@
 #include <Wire.h>
 #include <LiquidCrystal.h>
 
-#define MERKURINO_BUZZER_PIN A3;
-#define MERKURINO_KBD_PIN A0;
+#define MERKURINO_BUZZER_PIN A3
+#define MERKURINO_KBD_PIN A0
 
 class Merkurino {
     
