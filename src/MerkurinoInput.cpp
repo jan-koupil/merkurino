@@ -57,7 +57,7 @@ void MerkurinoInput::submit()
     keyTimer_.stop();
 };
 
-MerkurinoInput::MerkurinoInput(Merkurino m, inputStartCol = 0, inputStartRow = 0)
+MerkurinoInput::MerkurinoInput(Merkurino m, int inputStartCol = 0, int inputStartRow = 0)
 {
     merkurino_ = m;
     inputStartCol_ = inputStartCol;
