@@ -35,7 +35,7 @@ private:
     void submit();
 
 public:
-    MerkurinoInput(Merkurino m);
+    MerkurinoInput(Merkurino m, int inputStartCol = 0, int inputStartRow = 0);
     
     bool isReady();
     void startReading(char defaultText[], int inputLength);
