@@ -12,7 +12,7 @@ class Merkurino {
     
   public:
 
-    enum Button {None, Up, Down, Left, Right, Enter, Escape};
+    enum Button : byte {None, Up, Down, Left, Right, Enter, Escape};
 
     LiquidCrystal lcd {13, 12, 8, 7, 4, 2};
     
