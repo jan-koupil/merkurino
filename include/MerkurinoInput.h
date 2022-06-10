@@ -10,7 +10,7 @@
 class MerkurinoInput
 {
 private:
-    Merkurino merkurino_;
+    Merkurino &merkurino_;
     SimpleTimer keyTimer_;
     
     char symbolList_[128];
@@ -35,7 +35,7 @@ private:
     void submit();
 
 public:
-    MerkurinoInput(Merkurino m, int inputStartCol = 0, int inputStartRow = 0);
+    MerkurinoInput(Merkurino &m, int inputStartCol = 0, int inputStartRow = 0);
     
     bool isReady();
     void startReading(char defaultText[], int inputLength);

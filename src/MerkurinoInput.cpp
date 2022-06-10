@@ -57,9 +57,8 @@ void MerkurinoInput::submit()
     keyTimer_.stop();
 };
 
-MerkurinoInput::MerkurinoInput(Merkurino m, int inputStartCol, int inputStartRow)
+MerkurinoInput::MerkurinoInput(Merkurino &m, int inputStartCol, int inputStartRow) : merkurino_(m)
 {
-    merkurino_ = m;
     inputStartCol_ = inputStartCol;
     inputStartRow_ = inputStartRow;
     setKeyDelay(MERKURINO_DEFAULT_KEY_DELAY);
