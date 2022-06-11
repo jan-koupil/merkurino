@@ -1,6 +1,6 @@
 {
     "name": "Merkurino",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Library for using the Merkurino board (based on an Arduno Nano)",
     "keywords": "Merkurino",
     "repository":

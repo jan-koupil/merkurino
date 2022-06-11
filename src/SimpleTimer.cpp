@@ -53,3 +53,8 @@ bool SimpleTimer::hasTicked()
     setNextTickTime(currentTime);
     return true;
 };
+
+bool SimpleTimer::isRunning()
+{
+    return isRunning_;
+}

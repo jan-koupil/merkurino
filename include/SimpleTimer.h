@@ -20,6 +20,7 @@ public:
     void start();
     void stop();
     bool hasTicked();
+    bool isRunning();
 };
 
 #endif
